@@ -23,6 +23,14 @@ paper
 
     pip install requests-oauthlib
   
+  https://oauthlib.readthedocs.io/en/latest/oauth2/clients/client.html
   
+3 Provider
+
+ https://oauthlib.readthedocs.io/en/latest/oauth2/server.html
+ 
+ Django django-oauth-toolkit
+ 
+ 
   
   
