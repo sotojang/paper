@@ -1,3 +1,10 @@
+
+oauthlib
+https://oauthlib.readthedocs.io/en/latest/faq.html
+
+requests-oauthlib
+https://requests-oauthlib.readthedocs.io/en/latest/oauth2_workflow.html#introduction
+
 # paper
 paper
 
