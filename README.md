@@ -8,11 +8,11 @@ source bin/activate
 cd ..
 
 1 install for oauthlib
-  apt-get install python3-oauthlib  
-  pip install pyjwt cryptography
+    apt-get install python3-oauthlib
+    pip install pyjwt cryptography
 
 2 install for client
-  pip install requests-oauthlib
+    pip install requests-oauthlib
   
   
   
