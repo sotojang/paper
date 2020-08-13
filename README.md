@@ -1,4 +1,30 @@
 
+JWT (Json Web Token)
+
+https://www.pingidentity.com/developer/en/resources/jwt-and-jose.html
+
+    Claim	Description
+    iss	    Issuer of the JWT
+    sub	    Subject that the JWT is representing
+    aud	    Audience for the JWT
+    exp	    Time the JWT is set to expire
+    nbf	    Time the JWT is valid from (not-before)
+    iat	    Timestamp when the JWT was issued (issued-at)
+    jti	    Unique identifier for the JWT (JWT ID)
+    
+    ex) 
+    
+    {
+        "sub":"joe",
+        "aud":"im_oic_client",
+        "jti":"uf90SK4wscFhctUT6Dtvb2",
+        "iss":"https:\/\/localhost:9031",
+        "iat":1394060853,
+        "exp":1394061153,
+        "nonce":"e957ffba-9a78-4ea9-8eca-ae8c4ef9c856",
+        "at_hash":"wfgvmE9VxjAudsl9lc6TqA"
+    }
+    
 라즈베리파이 모델 버전 확인 방법
 
     $ cat /proc/cpuinfo
