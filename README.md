@@ -10,7 +10,7 @@ https://www.pingidentity.com/developer/en/resources/jwt-and-jose.html
     exp  Time the JWT is set to expire ; 토큰의 만료 시간
     nbf  Time the JWT is valid from (not-before) ; 토큰의 not-before 타임, 언제 토큰이 유효해지기 시작하는지를 
     iat  Timestamp when the JWT was issued (issued-at) ; 큰이 발급된 시간
-    jti  Unique identifier for the JWT (JWT ID) ; 토큰 식별자, 토큰 발급자가 생성한 코큰의 고유한 
+    jti  Unique identifier for the JWT (JWT ID) ; 토큰 식별자, 토큰 발급자가 생성한 토큰의 고유한 식별자 값
     
     ex) 
     
