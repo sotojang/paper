@@ -15,12 +15,12 @@ https://www.pingidentity.com/developer/en/resources/jwt-and-jose.html
     ex) 
     
     {
-        "sub":"joe",
-        "aud":"im_oic_client",
-        "jti":"uf90SK4wscFhctUT6Dtvb2",
         "iss":"https:\/\/localhost:9031",
-        "iat":1394060853,
+        "sub":"joe",
+        "aud":"im_oic_client",        
         "exp":1394061153,
+        "iat":1394060853,        
+        "jti":"uf90SK4wscFhctUT6Dtvb2",
         "nonce":"e957ffba-9a78-4ea9-8eca-ae8c4ef9c856",
         "at_hash":"wfgvmE9VxjAudsl9lc6TqA"
     }
