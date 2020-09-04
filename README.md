@@ -116,7 +116,8 @@ paper
 
       4. 에설션 그랜드 
       확장된 그랜트 타입
-      졸업장이나 자격증과 같은 일종의 인증된 문서, SAML(Security Assertion Markup Language)과 JWT(Json Web Token) 사용
+      졸업장이나 자격증과 같은 일종의 인증된 문서, 
+      SAML(Security Assertion Markup Language)과 JWT(Json Web Token) 사용
 
 
 
