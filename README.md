@@ -145,6 +145,9 @@ paper
       11 토큰이란
          - JWT 구조
          - JOSE (JSON Object Signing and Encryption, 서명: JSON Signatures, 암호: JSON Web Encryption)
+           * HMAC 시그니처 대칭 서명과 검증
+           * RSA 시그니처 비대칭 서명과 검증
+           * JSON Web Keys, JWK
          - 인트로스팩션
          - 토큰 폐기
       12 클라이언트 동적 등록
