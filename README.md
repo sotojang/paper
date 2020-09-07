@@ -15,10 +15,12 @@ blog.hkwon.me/ab-apache-http-server-benchmarking-tool/
 
     사용법 예시
     $ ab -n 100 -c 10 http://192.168.0.108:9001/token
-
+    
     - 10명이 10번 요청
 
     $ sudo apt-get install -y gnuplot
+    
+    $ ab -n 100 -c 10 -g result.plot http://192.168.0.108:9001/token
     
     # 터미널 사이즈 조정(이미지 사이즈)
     set terminal png size 1024,768
