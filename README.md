@@ -1,4 +1,95 @@
 
+
+blog.hkwon.me/ab-apache-http-server-benchmarking-tool/
+
+    ubuntu : sudo apt-get install apache2-utils
+
+    주요 옵션
+    -n 성능 검사를 위해 보내는 요청 수
+    -c 동시 접속수 (client)
+    -C Cookie 헤더
+    -H 요청에 헤더 추가
+    -i GET 대신 HEAD 요청
+    -k KeepAlive
+    -p POST
+
+    사용법 예시
+    ab -n 100 -c 10 http://google.com
+
+    - 10명이 10번 요청
+
+    sudo apt-get install -y gnuplot
+    
+    # 터미널 사이즈 조정(이미지 사이즈)
+    set terminal png size 1024,768
+
+    # 가로, 세로 비율
+    set size 1,0.5
+
+    # 결과 파일 설정
+    set output "result.png"
+
+    # 범례/key 위치
+    set key left top
+
+    # y축 grid line
+    set grid y
+
+    # Label the x-axis
+    set xlabel 'requests'
+
+    # Label the y-axis
+    set ylabel "response time (ms)"
+
+    # Tell gnuplot to use tabs as the delimiter instead of spaces (default)
+    set datafile separator '\t'
+
+    # Plot the data
+    plot "result.plot" every ::2 using 5 title 'response time' with lines
+    exit
+    
+    $ gnuplot script.plot
+    
+    request별 response time을 그래프로 확인해 볼 수 있는데, 다음과 같이 호출한 시간 별로 scatter chart처럼 그래프를 그려볼 수도 있다.
+    
+    # 터미널 사이즈 조정(이미지 사이즈)
+    set terminal png size 1024,768
+
+    # 결과 파일 설정
+    set output "result.png"
+
+    # 범례/key 위치
+    set key left top
+
+    # y축 grid line
+    set grid y
+
+    # x축 데이터 지정
+    set xdata time
+
+    # input time format
+    set timefmt "%s"
+
+    # x축 time format 시:분:초
+    set format x "%H:%M:%S"
+
+    # Label the x-axis
+    set xlabel 'H:M:S'
+
+    # Label the y-axis
+    set ylabel "response time (ms)"
+
+    # 구분자로 탭을 사용
+    set datafile separator '\t'
+
+    # Plot the data
+    plot "result.plot" every ::2 using 2:5 title 'response time' with points
+
+    exit
+
+
+
+
 JWT (Json Web Token)
 
 https://www.pingidentity.com/developer/en/resources/jwt-and-jose.html
