@@ -33,6 +33,11 @@ blog.hkwon.me/ab-apache-http-server-benchmarking-tool/
     wait : request를 보내고나서 response를 받기 전까지 서버사이드에서 처리되는 시간
     network 시간 = dtime – wait
     
+    starttime	seconds	ctime	dtime	ttime	wait
+    Mon Sep 07 17:08:49 2020	1599466129	133	505	638	361
+    Mon Sep 07 17:08:50 2020	1599466130	199	949	1148	949
+    Mon Sep 07 17:08:50 2020	1599466130	199	950	1149	950
+    
     # 터미널 사이즈 조정(이미지 사이즈)
     set terminal png size 1024,768
 
