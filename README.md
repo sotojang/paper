@@ -24,6 +24,15 @@ blog.hkwon.me/ab-apache-http-server-benchmarking-tool/
     
     $ cat  result.plot
     
+    starttime : request가 시작된 시간
+    seconds : starttime을 unix timestamp로 표현
+    ctime : connection 시간으로 request를 write하기 위해 서버와 socket을 여는 시간
+    dtime : processing 시간 -> 결과를 반환받기 위해 wait하는 시간 + 서버 작업 시간 + 결과 반환 시간.
+    dtime = ttime – ctime
+    ttime : request가 전체 수행된 시간(ttime = ctime + dtime)
+    wait : request를 보내고나서 response를 받기 전까지 서버사이드에서 처리되는 시간
+    network 시간 = dtime – wait
+    
     # 터미널 사이즈 조정(이미지 사이즈)
     set terminal png size 1024,768
 
