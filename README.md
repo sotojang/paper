@@ -22,6 +22,8 @@ blog.hkwon.me/ab-apache-http-server-benchmarking-tool/
     
     $ ab -n 100 -c 10 -g result.plot http://192.168.0.108:9001/token
     
+    $ cat  result.plot
+    
     # 터미널 사이즈 조정(이미지 사이즈)
     set terminal png size 1024,768
 
